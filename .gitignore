@@ -1,0 +1,27 @@
+
+node_modules/
+
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment files
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# IDEs/editors
+.vscode/
+.idea/
+
+# Coverage reports
+coverage/
