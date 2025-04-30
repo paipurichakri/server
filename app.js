@@ -7,8 +7,10 @@ let serverRouting = require("./Router/serverrouter");
 let subserviceRouting = require("./Router/subservicerouter");
 
 const cartRoutes = require("./Router/cartrouter");
+const { default: mongoose } = require("mongoose");
 
 require("./Database/db")
+
 
 let app = express();
 
