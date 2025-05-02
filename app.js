@@ -7,10 +7,13 @@ let serverRouting = require("./Router/serverrouter");
 let subserviceRouting = require("./Router/subservicerouter");
 
 const cartRoutes = require("./Router/cartrouter");
-const { default: mongoose } = require("mongoose");
 
-require("./Database/db")
+const connectDB = require("./Database/db");
+// const { default: mongoose } = require("mongoose");
 
+// require("./Database/db")
+
+require('dotenv').config();
 
 let app = express();
 
@@ -20,6 +23,7 @@ app.use(express.json());
 
 app.use(cors());
 
+connectDB();
 
 app.use("/server",serverRouting);
 
